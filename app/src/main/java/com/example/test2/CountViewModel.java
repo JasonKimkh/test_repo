@@ -12,8 +12,11 @@ public class CountViewModel extends ViewModel {
         count.setValue(0);
     }
 
-    public void setPlusCount()
-    {
-        count.postValue(count.getValue() +1);
+    public void setPlusCount() {
+        count.postValue(count.getValue() + 1);
+    }
+
+    public void initCount(){
+        count.postValue(0);
     }
 }
